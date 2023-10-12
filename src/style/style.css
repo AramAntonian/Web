@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.header,.menu,.signin-cart{
+    display:flex;
+    flex-direction: row;   
+    align-items: center;
+}
+
+.header{
+    justify-content: space-around;
+    position: fixed;
+    top:0;
+    width: 100vw;
+    z-index: 3;
+    background: white;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+
+.navLinks{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:5px;
+    cursor: pointer;
+}
+
+.signin-cart{
+    gap:20px;
+ 
+}
+
+
+#signin{
+    width:70px;
+    height:40px;
+    background-color: black;
+    color:white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap:30px
+}
+.menu-text{
+    box-sizing: content-box;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:fit-content;
+    text-align: center;
+    height: 35px;
+    padding-top: 15px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+#question{
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.search-menu{
+    display: flex;
+    gap:30px;
+    flex-direction: row;
+    align-items: center;
+}
+.menu{
+    gap:10px
+}
+#searchInp{
+    width:35vw;
+    height:50px;
+    outline: none;
+    border:1px solid white;
+    background: white;
+    border-bottom-right-radius: 20px ;
+    border-top-right-radius: 20px ;
+    box-shadow: 30px;
+    box-shadow: 19px 2px 30px 2px rgb(235, 232, 232);
+}
+
+#search{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#searchIcon{
+    border-bottom-left-radius: 20px ;
+    border-top-left-radius: 20px ;
+    align-items: center;
+    display: flex;
+    border:1px solid white;
+
+    justify-content: center;
+    width:35px;
+    box-shadow:-4px 2px 30px 2px  rgb(235, 232, 232);
+
+}
+
+#menu-discover:hover,#menu-trips:hover,#menu-community:hover,#menu-more:hover{
+    background: rgb(235, 233, 233);
+}
